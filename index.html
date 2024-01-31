@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/65184cdaf5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Porto do Sol</title>
+</head>
+
+<body>
+    <section class="headding">
+        <div class="login">
+            <h1 style="color: white">SISTEMA EM DESENVOLVIMENTO</h1>
+            <img src="img/logo.png" width="300px">
+            <div class="email-login">
+
+                <div class="1" style="padding: 10px;">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="2" style="padding: 10px; border-left: 1px solid black">
+
+                    <input type="email" class="email" placeholder="Inisira seu e-mail">
+                </div>
+            </div>
+
+
+
+
+            <div class="password-login">
+
+                <div class="1" style="padding: 10px;">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="2" style="padding: 10px; border-left: 1px solid black">
+
+                    <input type="password" class="password" placeholder="Insira sua senha">
+                </div>
+            </div>
+
+
+
+            <div id="mensagem-logar">Ta em desenvolvimento ainda animal.. Calma ai</div>
+            <button id="logar" onclick="msglogar()">Acessar</button>
+            <div id="mensagem">Esqueceu a senha? Que burro! KKKKKKKKK</div>
+            <button id="esqueci-minha-senha" onclick="msg()">Esqueceu sua senha?</button>
+        </div>
+    </section>
+    <script>
+        function msg() {
+            $("#mensagem").addClass('ver');
+            setTimeout(function () { $("#mensagem").removeClass('ver'); }, 3000);
+        }
+
+        function msglogar() {
+            $("#mensagem-logar").addClass('verlogar');
+            setTimeout(function () { $("#mensagem-logar").removeClass('verlogar'); }, 3000);
+        }
+        
+        
+        
+        </script>
+</body>
+
+</html>
