@@ -1,69 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/65184cdaf5.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>Porto do Sol</title>
+    <script type="text/javascript" src="js/js.js"></script>
+    <title>Timer Support</title>
 </head>
 
 <body>
-    <section class="headding">
+    <div class="top-menu-bar">
+        <button class="home" onclick="clicou()">
+            Home
+        </button>
+        <button class="Inscrever" onclick="clicou()">
+            Inscrever
+        </button>
+        <button class="contato" onclick="clicou()">
+            Contato
+        </button>
+    </div>
+
+    <section class="content">
         <div class="login">
-            <h1 style="color: white">SISTEMA EM DESENVOLVIMENTO</h1>
-            <img src="img/logo.png" width="300px">
-            <div class="email-login">
-
-                <div class="1" style="padding: 10px;">
-                    <i class="fa-solid fa-user"></i>
+            ACESSAR
+            <div class="logar">
+                <p><input type="text" placeholder="Insira seu e-mail"></p>
+                <p><input type="password" placeholder="Insira sua senha"></p>
+                <p><input type="checkbox"> <text style="color: gray;"> Lembrar </text></p>
+                <button class="btn-entrar" onclick="location.href='home.html';">Entrar</button>
+                <button class="btn-reset-senha"> > Esqueci minha senha</button>
+            </div>
+        </div>
+        <div class="infos">
+            <text style="padding: 1rem; font-size: 30px; color: gray;">Suporte</text>
+            <text style="padding: 0 1rem; font-size: 15px; color: gray;">Bem-vindo ao nosso centro de suporte. Pode
+                contactar-nos através da abertura de chamados. Os seus chamados serão respondidos pela nossa equipe.
+            </text>
+            <div class="infos-details">
+                <div class="info1">
+                    <i class="fa-solid fa-ticket fa-5x" style="color: #ffffff;"></i>
+                    <div class="div1">
+                        <text style="font-size: 1.5rem; color: white;">Tickets</text><br>
+                        <p class="description-info" style="color: white;">
+                            Inicie o seu chamado pelo nosso centro de suporte para receber assistência com suas dúvidas, sugestões e problemas.
+                        </p>
+                    </div>
                 </div>
-
-                <div class="2" style="padding: 10px; border-left: 1px solid black">
-
-                    <input type="email" class="email" placeholder="Inisira seu e-mail">
+                <div class="info1" style="background: rgba(0, 0, 255, 0.705);">
+                    <i class="fa-regular fa-newspaper fa-5x" style="color: #ffffff;"></i>
+                    <div class="div1">
+                        <text style="font-size: 1.5rem; color: white;">Chamados</text><br>
+                        <p class="description-info" style="color: white;">
+                            
+                            Confira nossos artigos sobre questões frequentes, guias e documentação.
+                        </p>
+                    </div>
+                </div>
+                <div class="info1" style="background: rgb(0, 183, 255);">
+                    <i class="fa-solid fa-user fa-5x" style="color: #f7f9fd;"></i>
+                    <div class="div1">
+                        <text style="font-size: 1.5rem; color: white;">Contas</text><br>
+                        <p class="description-info" style="color: white;">
+                            Todos os seus chamados são registrados em seu perfil de conta. Mantemos um registro de todas as solicitações que você nos enviou.
+                        </p>
+                    </div>
                 </div>
             </div>
-
-
-
-
-            <div class="password-login">
-
-                <div class="1" style="padding: 10px;">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-
-                <div class="2" style="padding: 10px; border-left: 1px solid black">
-
-                    <input type="password" class="password" placeholder="Insira sua senha">
-                </div>
-            </div>
-
-
-
-            <div id="mensagem-logar">Ta em desenvolvimento ainda animal.. Calma ai</div>
-            <button id="logar" onclick="msglogar()">Acessar</button>
-            <div id="mensagem">Esqueceu a senha? Que burro! KKKKKKKKK</div>
-            <button id="esqueci-minha-senha" onclick="msg()">Esqueceu sua senha?</button>
         </div>
     </section>
-    <script>
-        function msg() {
-            $("#mensagem").addClass('ver');
-            setTimeout(function () { $("#mensagem").removeClass('ver'); }, 3000);
-        }
 
-        function msglogar() {
-            $("#mensagem-logar").addClass('verlogar');
-            setTimeout(function () { $("#mensagem-logar").removeClass('verlogar'); }, 3000);
-        }
-        
-        
-        
-        </script>
+    <section class="footer"> <i class="fa-solid fa-mug-saucer"></i> - RoxBHz</section>
 </body>
 
 </html>

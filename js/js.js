@@ -1,0 +1,4 @@
+function clicou()
+{
+alert("clicou");
+}
